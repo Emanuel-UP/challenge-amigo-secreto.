@@ -34,3 +34,24 @@ function mostrarListaAmigos() {
         lista.appendChild(li);
     });
 }
+// Función para sortear un amigo secreto
+function sortearAmigo() {
+    // Validar que haya amigos en la lista
+    if (amigos.length === 0) {
+        alert('No hay amigos en la lista para sortear.');
+        return;
+    }
+
+    // Seleccionar un amigo aleatorio
+    const indiceAleatorio = Math.floor(Math.random() * amigos.length);
+    const amigoSorteado = amigos[indiceAleatorio];
+
+    // Mostrar el resultado en la interfaz
+    mostrarResultado(amigoSorteado);
+
+    // Eliminar el amigo sorteado de la lista
+    amigos.splice(indiceAleatorio, 1);
+
+    // Actualizar la lista visual después de sortear
+    mostrarListaAmigos();
+}
