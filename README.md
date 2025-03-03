@@ -21,7 +21,7 @@
 
 1. **Clona el repositorio**:
    ```bash
-   git clone 
+   git clone https://github.com/Emanuel-UP/challenge-amigo-secreto..git
 
 ## Autores
 - Emanuel Lombana 
