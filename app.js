@@ -55,3 +55,12 @@ function sortearAmigo() {
     // Actualizar la lista visual después de sortear
     mostrarListaAmigos();
 }
+// Función para mostrar el resultado del sorteo
+function mostrarResultado(amigo) {
+    const resultado = document.getElementById('resultado');
+    resultado.innerHTML = ''; // Limpiar el resultado anterior
+
+    const li = document.createElement('li');
+    li.textContent = `¡El amigo secreto es: ${amigo}!`;
+    resultado.appendChild(li);
+}
